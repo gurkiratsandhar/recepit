@@ -12,7 +12,13 @@ import { Toaster } from "react-hot-toast";
 import { UserContextProvider } from "../context/userContext";
 
 axios.defaults.baseURL = `https://recepit.onrender.com`;
-axios.defaults.withCredentials = true;
+// axios.defaults.withCredentials = true;
+// axios.defaults.headers = {
+//   "Access-Control-Allow-Origin": "*",
+//   "Access-Control-Allow-Credentials": true,
+//   "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+//   "Content-Type": "application/json",
+// };
 
 function App() {
   const [record, setRecord] = useState(0);
