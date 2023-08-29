@@ -13,6 +13,12 @@ const {
 } = require("../controllers/authControllers");
 
 //middleware
+router.use(
+  cors({
+    credentials: true,
+    origin: "https://recepit.onrender.com",
+  })
+);
 
 router.get("/", test);
 router.post("/deletereceipt", deleteReceipt);
