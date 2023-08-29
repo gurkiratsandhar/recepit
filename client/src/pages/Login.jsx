@@ -18,9 +18,12 @@ const Login = ({ setRecord, info }) => {
     e.preventDefault();
     const { email, password } = data;
     try {
-      const { data } = await axios.post("/login", {
-        email,
-        password,
+      const { data } = await fetch("https://recepit.onrender.com/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: { email, password },
       });
       if (data.error) {
         toast.error(data.error);
