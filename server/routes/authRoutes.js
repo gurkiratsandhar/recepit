@@ -12,6 +12,8 @@ const {
   deleteReceipt,
 } = require("../controllers/authControllers");
 
+router.use(cors());
+
 router.get("/", test);
 router.post("/deletereceipt", deleteReceipt);
 router.post("/register", registerUser);
