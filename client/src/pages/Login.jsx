@@ -22,6 +22,7 @@ const Login = ({ setRecord, info }) => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
         },
         body: { email, password },
       });
