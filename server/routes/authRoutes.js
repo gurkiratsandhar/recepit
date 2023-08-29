@@ -14,12 +14,6 @@ const {
 
 //middleware
 
-router.use(
-  cors({
-    credentials: false,
-  })
-);
-
 router.get("/", test);
 router.post("/deletereceipt", deleteReceipt);
 router.post("/register", registerUser);
