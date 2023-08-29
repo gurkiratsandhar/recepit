@@ -13,14 +13,13 @@ const {
 } = require("../controllers/authControllers");
 
 //middleware
-router.use(cors());
 
-// router.use(
-//   cors({
-//     credentials: true,
-//     origin: "http://localhost:5173/",
-//   })
-// );
+router.use(
+  cors({
+    credentials: true,
+    origin: "*",
+  })
+);
 
 router.get("/", test);
 router.post("/deletereceipt", deleteReceipt);
