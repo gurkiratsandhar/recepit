@@ -13,6 +13,7 @@ const {
 } = require("../controllers/authControllers");
 
 //middleware
+router.use(cors());
 
 // router.use(
 //   cors({
