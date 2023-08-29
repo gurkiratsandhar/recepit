@@ -16,6 +16,7 @@ router.use(
   cors({
     credentials: true,
     origin: "https://recepit.goki1313.com",
+    methods: ["GET", "POST", "DELETE", "UPDATE", "PUT", "PATCH"],
   })
 );
 

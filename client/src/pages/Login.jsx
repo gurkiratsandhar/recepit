@@ -22,7 +22,7 @@ const Login = ({ setRecord, info }) => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Origin": "https://recepit.goki1313.com",
         },
         body: { email, password },
       });
