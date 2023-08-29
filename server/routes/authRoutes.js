@@ -12,7 +12,12 @@ const {
   deleteReceipt,
 } = require("../controllers/authControllers");
 
-router.use(cors());
+router.use(
+  cors({
+    credentials: true,
+    origin: "https://recepit.goki1313.com",
+  })
+);
 
 router.get("/", test);
 router.post("/deletereceipt", deleteReceipt);
